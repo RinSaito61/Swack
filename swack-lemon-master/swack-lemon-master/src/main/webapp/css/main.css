@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+
+.row{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+
+.col{
+	width: 100%;
+	height: 100%;
+	padding:0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	color: white;
+	padding: 0 10px;
+}
+
+.header .dropdown a{
+	font-size: 1.65rem;
+	text-decoration: none;
+	color:white;
+}
+
+.header .dropdown a:hover{
+	color:gray;
+}
+
+.header .dropdown li a{
+	color:black;
+}
+
+.btn-swack {
+	color: black;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	height: calc(100% - 40px);
+}
+
+.left {
+	width: 180px;
+	height: 100%;
+	background-color: #3e313c;
+}
+
+.left h2{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: solid 2px white;
+}
+
+.left details{
+	position:  relative;
+	margin-top: 10px;
+}
+
+.left summary {
+	cursor: pointer;
+	color: white;
+	font-size: 1.7rem;
+}
+
+details[open] > summary{
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-open;
+}
+
+details:not([open]) > summary{
+	display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+}
+
+.left h2, details {
+	padding-left: 5px;
+}
+
+.dropdown input{
+	position:  absolute;
+	right:  5px;
+    top: -30px;
+}
+
+.left .list-name {
+	margin-left: 15px;
+	font-size: 1.6rem;
+	color: white;
+	text-decoration: none;
+}
+
+modal-header {
+	color: black;
+}
+
+label {
+	width: 120px;
+}
+
+.contents {
+	flex: 1;
+	height: 100%;
+}
+
+.contents-header {
+	width: 100%;
+	height: 40px;
+}
+
+.contents-header h2 {
+	padding-left: 5px;
+	font-size: 21.5px;
+	font-weight: bold;
+	border-bottom: solid 2px black;
+}
+
+.contents-header .addiction-room{
+	margin:0 5px 0 5px;
+	font-size: 15px;
+	color:#8f8f8f;
+}
+
+.contents-area {
+	overflow: auto;
+	width: 100%;
+	height: calc(100% - 125px);
+	padding-right: 10px;
+}
+
+.contents-area::-webkit-scrollbar {
+	display: none;
+}
+
+.contents-area .log-add{
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	border-radius: 0px;
+	background-color: white;
+	border-bottom: solid 2px gray;
+}
+
+.contents-area .log-add .btn {
+    width: 100%;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    font-weight: 700;
+    text-align: left;
+    padding: 1.25rem 4rem;
+    text-decoration: none;
+}
+
+.contents-area .log-add .btn:hover {
+    background-color: #d3d3d3;
+}
+
+.contents-area .log-box {
+	width: 100%;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #efefef;
+}
+
+.contents-area .log-name {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.contents-area .log-time {
+	font-size: 1.2rem;
+}
+
+.contents-area .log-post {
+	font-size: 1.6rem;
+}
+
+.contents-footer {
+	width: 100%;
+	height: 60px;
+}
+
+.contents-footer .form-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.contents-footer .form-wrap input[type="text"] {
+	flex: 1;
+	padding: 10px 5px;
+}
+
+.contents-footer .form-wrap input[type="submit"] {
+	width: 50px;
+}
+
+#privateRoom{
+ opacity:0.7;
+}
